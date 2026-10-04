@@ -1,0 +1,66 @@
+body {
+    background-color: #FCF2E5;
+    color: #000000;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.calculator-application {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+    background-color: #EC5B38;
+    font-size: 30px;
+    align-items: center;
+}
+
+.calculator-application h2 {
+    font-family: 'GEO';
+}
+
+.input-group {
+    font-size: 50px
+}
+
+input[type="number"] {
+    width: 90vx;
+    height: 45px;
+}
+
+.footer {
+    background-color: #A8A492;
+    width: 100%;
+    height: 15vh;
+    margin-left: 15;
+}
+
+.navigation-system {
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navigation-system a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+
+@font-face {
+    src: url(fonts/Pixel\ Digivolve.otf) format('truetype');
+    font-family: 'PIXEL';
+    font-weight: Normal;
+}
+
+@font-face {
+    src: url(fonts/Geoform-Bold.otf) format('opentype');
+    font-family: 'GEO';
+    font-weight: Normal;
+}

@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #121358;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.user-welcome-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.user-welcome-profile {
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+}
+
+.user-welcome-profile img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    margin: 0;
+}
+
+.container-heading {
+    width: 100%;
+    height: 15vh;
+    background-color: #121358;
+    color: #8BBB92;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    font-size: 24px;
+}
+
+.navigation-site {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    font-family: 'GEO';
+    font-size: 20px;
+    text-align: right;
+    justify-content: right;
+    padding: 10px 50px ;
+}
+
+.navigation-site a {
+    text-align: right;
+    justify-content: right;
+    display: flex;
+}
+
+.nav-style {
+    text-align: right;
+    text-decoration: none;
+    color: #F2EFE7;
+}
+
+.main-first-container {
+    gap: 7.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40vh;
+    margin: 9;
+}
+
+.main-second-container {
+    display: flex;
+    gap: 7.0rem;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 40vh;
+}
+
+#tab {
+    scroll-margin-top: 40px;
+}
+
+.container-one {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    border: 2px solid #010736;
+    background-color: #C8DFDB;
+    box-sizing: border-box;
+}
+
+.container-one a {
+    display: inline-block;
+}
+
+.user-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.user-button img {
+    width: 250px;
+    height: 250px;
+}
+
+.user-button a {
+    width: 50%;
+    height: 40vh;
+}
+
+.container-one img {
+    width: 195px;
+    height: 195px;
+    box-shadow: 5px 5px 10px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.container-two {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    border: 2px solid #010736;
+    background-color: #C8DFDB;
+    box-sizing: border-box;
+}
+
+.container-two img {
+    width: 195px;
+    height: 195px;
+    box-shadow: 5px 5px 10px rgba(0.3, 0.3, 0.3, 0.3);
+    
+}
+
+.container-three {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    border: 2px solid #010736;
+    background-color: #C8DFDB;
+    box-sizing: border-box;
+}
+
+.container-three img {
+    width: 195px;
+    height: 195px;
+    box-shadow: 5px 5px 10px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.container-four {
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+    border: 2px solid #010736;
+    background-color: #C8DFDB;
+    box-sizing: border-box;
+}
+
+.container-four img {
+    width: 195px;
+    height: 195px;
+    box-shadow: 5px 5px 10px rgba(0.3, 0.3, 0.3, 0.3);
+}
+
+.page-footer {
+    width: 100%;
+    height: 50vh;
+    background-color: #010736;
+    color: #F2EFE7;
+    box-sizing: border-box;
+}
+
+.footer-text {
+    margin: 50px ;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: #F2EFE7;
+}
+
+.website-footer-description {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+}
+
+.website-footer-description p {
+    color: #121358;
+}
+
+@font-face {
+    src: url(fonts/Pixel\ Digivolve.otf) format('truetype');
+    font-family: 'PIXEL';
+    font-weight: Normal;
+}
+
+@font-face {
+    src: url(fonts/Geoform-Bold.otf) format('opentype');
+    font-family: 'GEO';
+    font-weight: Normal;
+}
+
+@media (max-width: 768px) {
+    .container-heading h1 {
+        margin-left: 20px;
+        font-size: 1.8rem;
+    }
+
+    .main-first-container, 
+    .main-second-container {
+        flex-direction: column; 
+        width: 100%; 
+        gap: 3rem;  
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .main-first-container {
+        margin-top: 3rem;
+    }
+
+    .container-one, .container-two, .container-three, .container-four {
+        width: 100%;
+        max-width: 350px;
+        height: 400px; 
+    }
+
+    .container-one img, .container-two img, .container-three img, .container-four img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .page-footer {
+        flex-direction: column;
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    .footer-text, .website-footer-description {
+        margin: 25px; 
+        gap: 15px;
+    }
+}

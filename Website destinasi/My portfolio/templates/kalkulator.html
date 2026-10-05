@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='kalkulator.css') }}">
+</head>
+<body>
+    <div class="calculator-application">
+        <h2>
+            Kalkulator
+        </h2>
+        <form action="/kalkulator" method="POST">
+ 
+            <div class="input-group">
+                <input type="number" step="any" name="angka1" placeholder="Angka pertama" required>
+            </div>
+            <div class="input-group">
+                <select name="operasi">
+                    <option value="tambah">+</option>
+                    <option value="kurang">-</option>
+                    <option value="kali">x</option>
+                    <option value="bagi">:</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <input type="number" step="any" name="angka2" placeholder="Angka kedua" required>
+            </div>
+
+            <button type="submit">Hitung</button>
+        </form>
+
+        {% if hasil !="" %}
+        <div class="hasil_box">
+            <p>
+                Hasil :
+            </p>
+
+            <h3>
+                {{ hasil  }}
+            </h3>
+        </div>
+
+        {% endif %}
+    </div>
+
+    <div class="footer">
+        <div class="navigation-system">
+            <a href="/">Home</a>
+            <a href="/profile">Profile</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='portfolio.css') }}">
+</head>
+
+<body>
+
+    
+            <div class="logo-nav"></div>
+
+            <nav class="navigation">
+                <div class="hamburger" id="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul class="navigation-menu" id="nav-links">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                </ul>
+            </nav>
+
+    <section class="induk">
+        <div class="webpage-heading">
+            <img src="{{ url_for('static', filename='images/contoh foto saya.png') }}" alt="Foto saya">
+
+            <h1 id="sambutan"></h1>
+            <p class="heading-description">
+                An Information Systems student at Gunadarma University,
+                currently in their third semester, possesses a strong interest
+                in the field of information systems—particularly in web 
+                development, database system construction, and user
+                interface design for web systems.
+            </p>
+            
+        </div>
+
+        <div class="webpage-body">
+            <h1>
+                Body
+            </h1>
+            <div class="navigasi-website-2">
+                <div class="button-style">
+                    <a href="profile.html" class="main-button">
+                        <img src="{{ url_for('static', filename='images/icon porto profile.png') }}" alt="Profil">
+                    </a>
+                </div>
+
+                <div class="button-style">
+                    <a href="projects.html" class="main-button">
+                        <img src="{{ url_for('static', filename='images/icon porto projek done.png') }}" alt="Proyek">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="webpage-footer">
+            <p>
+                About
+            </p>
+        </div>
+    </section>
+
+        <script src="script.js"></script>
+</body>
+</html>
